@@ -1,0 +1,103 @@
+body {
+    font-family: nexa, helvetica neue, helvetica, arial, sans-serif;
+    background-color: beige;
+
+}
+
+h2 {
+    color: white;
+    padding: 5px;
+}
+
+h3 {
+    color: #01D66C;
+    text-decoration: underline;
+
+}
+
+.logo {
+    width: 55px;
+    margin-left: -3em;
+}
+
+nav {
+    background-color: white;
+    border-radius: 5px;
+    color: #01D66C;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: white;
+    margin-top: 5px;
+    padding-bottom: 1px;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    font-size: 1em;
+    font-weight: bold;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #01D66C;
+    padding: 5px;
+
+
+}
+
+#nav ul li:hover {
+    cursor: pointer;
+
+}
+
+#verhalen {
+    color: white;
+    padding-bottom: 4em;
+    padding-left: 1em;
+
+}
+
+article#verhalen {
+    background-color: #2800A0;
+    border-radius: 1em;
+}
+
+article.Verhaal {
+    background-color: white;
+    margin: 0 0 1em 0;
+    border-radius: 1em;
+}
+
+.boek {
+    width: 22em;
+    height: 15;
+    margin: 1em;
+
+}
+
+article#verder {
+    background-color: #01D66C;
+    padding-bottom: 5em;
+    padding-left: 1em;
+    border-radius: 1em;
+
+}
+
+.Zoekfunctie {
+    padding-top: 1em;
+    margin-left: 13em;
+}
+
+.zoekbutton {
+    height: 3em;
+    width: 8em;
+    color: white;
+    background-color: #ff3368;
+    border-radius: 2em;
+    margin-top: 1em;
+    font-weight: bold;
+}

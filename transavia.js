@@ -68,24 +68,3 @@ if (document.querySelector('div > input')) {
 
 }
 
-
-/* Mijn lijst icoon veranderd als er op het hartje gedrukt wordt */
-
-/*
-
-if (document.querySelector('img[alt=mijnlijsticoon]')) {
-    var afbeelding = document.querySelector('img[alt=mijnlijsticoon]');
-}
-
-function change() {
-    "use strict";
-    var lijst = document.querySelector('image');
-    afbeelding.src = "images/1)mijnlijst.png";
-}
-
-
-if (document.querySelector('ul + li')) {
-    image.addEventListener('click', afbeelding);
-}
-
-*/

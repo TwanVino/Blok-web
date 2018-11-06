@@ -1,0 +1,553 @@
+/* zorgt voor de juiste font family */
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('fonts/NexaLight.otf');
+    /* IE9 Compat Modes */
+    src: url('fonts/NexaLight.otf') format('otf'), /* Super Modern Browsers */
+    url('fonts/NexaLight.otf') format('otf'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+    font-family: "Nexa Bold";
+    src: url('fonts/NexaBold.otf');
+    /* IE9 Compat Modes */
+    src: url('fonts/NexaBold.otf') format('otf'), /* Super Modern Browsers */
+    url('fonts/NexaBold.otf') format('otf'), /* Pretty Modern Browsers */
+}
+
+
+body {
+    font-family: "NexaLight", "NexaBold", "helvetica neue", "helvetica", arial, sans-serif;
+    background-color: white;
+    line-height: 1.5em;
+
+}
+
+/* De H1 boven aan de overzichtspagina in blauw vlak */
+
+nav + div h1 {
+    margin: auto;
+    font-family: "Nexa Bold";
+    font-size: 2.3em;
+    position: absolute;
+    background-color: #2800a0;
+    padding: 1rem 1.5em;
+    color: #fff;
+    border-radius: .5rem;
+    left: .5em;
+    top: 2.4em;
+
+}
+
+
+/* De achtergrond foto die meeschalt, achter de h1 */
+
+header div {
+    background-image: url(images/Transavia-map.png);
+    height: 14em;
+    background-position: 100% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -1em;
+
+}
+
+/* een div om de achtergrond van de aanmeld.html te stylen */
+
+#achtergrondWrapper {
+    background-color: #00d66c;
+    padding: .1em;
+    margin: .2em;
+    border-radius: 1em;
+
+}
+
+/* de img op de detailpagina wordt hier aangesproken */
+
+header + img {
+    display: flex;
+    justify-content: center;
+    margin: 6em auto 10em auto;
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    width: 40em;
+    height: 60em;
+    border-radius: 2em;
+
+}
+
+/* De navigatie balk boven aan de pagina */
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav {
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: -1em;
+}
+
+li a {
+    text-decoration: none;
+
+}
+
+li + img,
+p {
+    font-size: .5em;
+    color: #00d66c;
+    margin-top: -2.5em;
+
+}
+
+
+/* de buttons die linken naar de detailpagina */
+
+a {
+    text-decoration: none;
+}
+
+/* transavia logo links boven aan de pagina */
+
+.logo {
+    margin-left: -.9em;
+    margin-bottom: -.3em;
+    width: 3.8em;
+    height: 2.8em;
+}
+
+/* mijn lijst icoon boven in het navigatie menu */
+
+.mijnlijst {
+    margin-bottom: .25em;
+    height: 2.4em;
+    width: 2em;
+}
+
+/* de h1 in de main 'Welkom Twan' */
+
+main > h1 {
+    text-align: center;
+    font-size: 2.3em;
+    color: #00d66c;
+    width: 100%;
+    padding: 5px;
+    line-height: 1em;
+}
+
+/* de h2 'Welk verhaal wil je lezen? */
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #00d66c;
+    width: 100%;
+    padding: 5px;
+    line-height: .5em;
+
+}
+
+/* h3 'Populaire verhalen', boven de 99 verhalen */
+
+h3 {
+    margin-left: .7em;
+    text-decoration-line: underline;
+    font-size: 1.5em;
+    color: #00d66c;
+    width: 100%;
+    padding-bottom: .5em;
+    line-height: 1.3em;
+}
+
+/* section moet een header, hier mee laat ik hem niet zien */
+
+section > h4 {
+    display: none;
+}
+
+/* '14. Johan Cruijff' Titel;, boven de 99 verhalen op de overichtspagina */
+
+h4 {
+    display: inline-flex;
+    text-align: center;
+    background-color: #2800A0;
+    color: white;
+    border-radius: .5rem;
+    padding: .2em .8em .2em .4em;
+    margin: .2em;
+    font-size: .9em;
+
+}
+
+/* Footer achtergrond kleur */
+
+footer {
+    padding-top: 8em;
+    background-color: #f3e5d8;
+
+}
+
+/* button in de nav verkleurd bij hover, wertkt alleen op computer */
+
+nav a:hover {
+    color: #2800A0;
+
+}
+
+/* aanmeldbutton overzichtspagina, rechtsboven in het scherm */
+
+form > button {
+    height: 3em;
+    width: 8em;
+    background-color: #ff3368;
+    color: white;
+    padding-top: .4em;
+    font-family: inherit;
+    margin-right: 1.3em;
+}
+
+/* Andere kleur als je over de aanmeldbutton hovert, werkt alleen op computer */
+
+form > button:hover {
+    background-color: #2800A0;
+}
+
+/* De labels in het aanmeld formulier hebben fotn-weight bold */
+
+form > label {
+    font-weight: bold;
+
+}
+
+/* aanmeld formulier buttons */
+
+div > button {
+    height: 3em;
+    width: 8em;
+    background-color: #ff3368;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* de button in de div verandert van kleur bij muishover, werkt alleen op computer */
+
+div > button:hover {
+    background-color: #00D66C;
+
+}
+
+/* cancel button in het aanmeld formulier */
+
+div > input {
+    height: 3em;
+    width: 8em;
+    background-color: #2800A0;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+
+}
+
+div > input:hover {
+    background-color: #00D66C;
+}
+
+/* inlog/aanmeld formulier */
+
+.aanmeldform {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    padding: 50px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* aanmeld formulier input fields layout */
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* veld goed ingevuld = groen */
+
+input:valid {
+    border: solid #01D66C;
+
+}
+
+/* veld is automatisch grijs */
+
+input:invalid {
+    border: solid #D3D3D3;
+
+}
+
+/* alle cursors krijgen een pointer bij de buttons. */
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* blauwe rand weghalen bij button-klik */
+
+button:focus {
+    outline: none;
+}
+
+/* blauwe rand weghalen bij button-klik */
+
+input:focus {
+    outline: none;
+}
+
+/* Filter button */
+
+h2 + button {
+    height: 3em;
+    width: 8em;
+    background-color: #ff3368;
+    color: white;
+    padding-top: .2em;
+    border-radius: 1.5em;
+    margin-left: .8em;
+    margin-right: 1em;
+    font-family: inherit;
+
+}
+
+h2 + button:hover {
+    background-color: #2800A0;
+}
+
+select {
+    height: 2.7em;
+    width: 8em;
+    background-color: #ff3368;
+    color: white;
+    border-radius: 1em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #2800A0;
+}
+
+/* Filter klapt uit + opmaak filters */
+
+fieldset {
+    height: 0;
+    overflow: hidden;
+    transition: 1.6s;
+    border: none;
+}
+
+/* de legend wordt verborgen als het filter gesloten is */
+
+legend {
+    visibility: hidden;
+}
+
+/* filter labels aanpassen*/
+
+fieldset label {
+    padding: 0;
+    white-space: nowrap;
+}
+
+/* filter menu wordt hier door opengeklapt */
+
+fieldset.active {
+    display: flex;
+    border: solid;
+    border-color: gainsboro;
+    border-radius: 1em;
+    margin: .3em 2.5em 2em 1em;
+    width: 20em;
+    height: 12em;
+    padding: 1em;
+    box-shadow: 0px 1px 2px 0.5px gray;
+    font-family: inherit;
+
+}
+
+/* 'Toepassen' button in het filter menu */
+
+fieldset button {
+    width: 10em;
+    height: 3.5em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff3368;
+    border-radius: 2em;
+    color: white;
+    font-family: inherit;
+}
+
+fieldset button:hover {
+    background-color: #2800A0;
+}
+
+/* afbeelding verhalen */
+
+.responsive-image {
+    display: flex;
+    margin: 1em auto 1em auto;
+    max-width: 80%;
+    min-width: 80%;
+    height: 12em;
+    border-radius: .5em;
+}
+
+/* artikelen van de  99 verhalen */
+
+article {
+    border: solid;
+    border-color: gainsboro;
+    margin: 1em;
+    padding: .5em .5em 3em .5em;
+    border-radius: 1.5em;
+}
+
+/* 'Lees' button bij de 99 verhalen */
+
+div + a {
+    display: flex;
+    justify-content: center;
+    padding-top: .8em;
+    font-weight: bold;
+    height: 2.2em;
+    width: 100%;
+    background-color: #01D66C;
+    color: white;
+    border-radius: 1.5em;
+    font-family: inherit;
+}
+
+div + a:hover {
+    background-color: #2800A0;
+}
+
+
+/* h1 van de detailpagina kleinere font size*/
+
+#hoofd1 {
+    font-size: 2em;
+
+}
+
+/* de <p> '400 lezers vinden dit leuk' op de overzichtspagina stylen */
+
+article > p:nth-child(3) {
+    color: #00d66c;
+    font-size: .6em;
+    text-align: center;
+    margin-top: -1.8em;
+}
+
+/* eerste letter veranderen met psuedo class*/
+
+article > p:nth-child(3)::first-letter {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* download en hartje icoon onder de verhalen, in een div */
+
+article > div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.9em;
+}
+
+/* Het download en hartje icoon bij de verhalen op de overzichtspagina */
+
+img[alt="downloadicoon"] {
+    width: 2.6em;
+    height: 2.3em;
+    cursor: pointer;
+}
+
+img[alt="like hartje leeg"] {
+    width: 2.3em;
+    height: 2.3em;
+    cursor: pointer;
+}
+
+/* Media queries om de website responsive te maken */
+
+@media (min-width:20em) {
+    img[alt="Johan cruijff Verhaal in gif"] {
+        /* dit schaalt het verhaal op de detailpagina */
+        zoom: 0.5;
+    }
+}
+
+@media (min-width:30em) {
+    img[alt="Johan cruijff Verhaal in gif"] {
+        /* dit schaalt het verhaal op de detailpagina */
+        zoom: 0.6;
+    }
+}
+
+/* Bij 40em schalen de verhalen naar een 2 koloms grid */
+
+@media (min-width:40em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    img[alt="Johan cruijff Verhaal in gif"] {
+        /* dit schaalt het verhaal op de detailpagina */
+        zoom: 0.7;
+
+    }
+}
+
+@media (min-width:65em) {
+    img[alt="Johan cruijff Verhaal in gif"] {
+        /* dit schaalt het verhaal op de detailpagina */
+        zoom: 0.9;
+    }
+
+}
+
+/* bij 65em schalen de verhalen op de overzichtspagina naar een 4 koloms grid */
+
+@media (min-width:65em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+}

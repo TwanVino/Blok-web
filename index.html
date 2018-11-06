@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overzichtspagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- navigatie menu -->
+        <nav>
+            <ul>
+                <!-- Logo transavia links boven op de overzichtspagina -->
+                <li>
+                    <a href="index.html">
+                        <img class="logo" src="images/klein-logo.png" alt="Transavias logo"></a>
+                </li>
+
+                <!-- Mijn lijst icoon naast het transavia logo -->
+                <li>
+                    <a href="favorieten.html">
+                        <img class="mijnlijst" src="images/mijnlijst.png" alt="mijnlijsticoon">
+                        <p>Mijn lijst</p>
+                    </a>
+                </li>
+                <!-- aanmeldbutton overzichtspagina -->
+                <li>
+                    <form action="Aanmelden.html">
+                        <button> Aanmelden</button> </form>
+                </li>
+
+
+            </ul>
+        </nav>
+
+        <!-- h1 99 verhalen -->
+
+        <div>
+            <h1> 99 Verhalen </h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1>Welkom, Twan!</h1>
+        <h2>Welk verhaal wil je lezen?</h2>
+
+        <!-- Filter button + <i> is het pijltje in de button  -->
+
+        <button> Filter <i></i> </button>
+
+        <!-- Sorteer op -->
+        <select>
+            <option data-type="all" selected="selected">Sorteer</option>
+            <option data-filter=".verder">Verder lezen</option>
+            <option data-filter=".new">Nieuwe release</option>
+            <option data-filter=".az">Alfabetisch A_Z</option>
+            <option data-filter=".za">Alfabetisch Z_A</option>
+        </select>
+
+        <!-- uitklapbaar Filter menu doet het goed! nog niet helemaal uitgewerkt-->
+        <fieldset>
+            <legend>Filter</legend>
+
+            <input id="comedy" type="checkbox">
+            <label for="comedy"> Kunst (33) </label>
+
+            <input id="politic" type="checkbox">
+            <label for="politic"> Fictie (28) </label>
+
+            <input id="art" type="checkbox">
+            <label for="art"> Bn'ers (20) </label>
+
+            <button>Toepassen!</button>
+
+
+        </fieldset>
+
+        <!-- h4 is de titel boven de kolommen -->
+
+        <h3> Populaire verhalen </h3>
+
+        <!-- Responsive 99 verhalen beginnen hier -->
+        <section>
+            <!-- h5 invisible staat op display: none; i.v.m. section error -->
+            <h4>Invisible</h4>
+            <article>
+                <!-- De titel van de verhalen zijn h5 -->
+                <h4>14. Johan Cruijff</h4>
+                <!-- Doorlinken naar de detailpagina -->
+                <a href="Detailpagina.html" class="article">
+                    <!-- Dit is de foto van de verhalen op de overzichtspagina -->
+                    <img src="images/14.%20Johan%20cruijff.png" alt="Boek " class="responsive-image"> </a>
+                <!-- Er wordt aangegeven hoeveel gebruikers het verhaal geliked hebben -->
+                <p>438 lezers vinden dit verhaal leuk </p>
+
+
+                <!-- In deze div zit het download en like icoon die rechts onder de verhalen op de overzichtspagina staan -->
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+            <!-- De comments hierboven gelden ook voor de 7 <articles> hier onder -->
+            <article>
+                <h4>37. Letterlijk</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/37%20-%20Letterlijk.png" alt="Boek " class="responsive-image"> </a>
+                <p>412 lezers vinden dit verhaal leuk </p>
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+            <article>
+                <h4>11. Regenboog</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/Artboard%202@4x.png" alt="Boek " class="responsive-image"> </a>
+                <p>398 lezers vinden dit verhaal leuk </p>
+
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+            <article>
+                <h4>16. Eric Lucassen</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/eric-lucassen-16-01.png" alt="Boek " class="responsive-image"> </a>
+                <p>355 lezers vinden dit verhaal leuk </p>
+
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+            <article>
+                <h4>39. Poepen</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/shafiek.39.poep.jpg" alt="Boek " class="responsive-image"> </a>
+                <p>311 lezers vinden dit verhaal leuk </p>
+
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+            <article>
+                <h4>73. Stoned</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/stoned.png" alt="Boek " class="responsive-image"> </a>
+                <p>240 lezers vinden dit verhaal leuk </p>
+
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+            <article>
+                <h4>38. Moe</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/versie1-grouped-01.jpg" alt="Boek " class="responsive-image"> </a>
+                <p>211 lezers vinden dit verhaal leuk </p>
+
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+
+            </article>
+
+            <article>
+                <h4>48. Drukte</h4>
+                <a href="Detailpagina.html" class="article">
+                <img src="images/Beroemd-0.1.jpg" alt="Boek " class="responsive-image"> </a>
+                <p>198 lezers vinden dit verhaal leuk </p>
+
+                <div>
+                    <img src="images/Download-icon.png" alt="downloadicoon">
+                    <img class="hartje" src="images/hartje-leeg.png" alt="like hartje leeg">
+                </div>
+
+                <a href="Detailpagina.html">Lees dit verhaal</a>
+
+            </article>
+
+
+        </section>
+        <!-- Einde van het responsive ontwerp -->
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="transavia.js">
+
+
+    </script>
+</body>
+
+
+</html>

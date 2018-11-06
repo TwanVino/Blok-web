@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meld je aan!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+   <!-- Ik gebruik hier een div om de achtergrond kleur te kunnen veranderen -->
+    <div id="achtergrondWrapper">
+
+        <!-- Het inlog formulier -->
+        <form class="aanmeldform" action="index.html">
+            <h1>Meld je aan!</h1>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="" name="email" id="email" required>
+
+            <label for="ww">Wachtwoord</label>
+            <input type="password" placeholder="" name="psw" id="ww" required>
+
+            <label for="herhaalww">Herhaal wachtwoord</label>
+            <input type="password" placeholder="" name="psw-repeat" id="herhaalww" required>
+
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Onthoud mij
+            </label>
+
+           <!-- De cancel en Meld je aan button onder aan het formulier -->
+            <div>
+                <input type="button" value="Cancel">
+                <button type="submit"> Meld je aan</button>
+            </div>
+
+        </form>
+
+        <script src="transavia.js">
+        </script>
+
+    </div>
+
+
+</body>
+
+
+
+</html>

@@ -9,7 +9,7 @@ Datum: 06-11-2018
 
 In dit project vindt u meerdere html bestanden met de bijbehoren css en javascript.
 
-Ik heb een website ontworpen die er voor moet zorgen dat je zonder internetverbinding verhalen kunt lezen. 
+Ik heb een website ontworpen, in de stijl van transavia, die er voor moet zorgen dat je zonder internetverbinding verhalen kunt lezen. 
 De verhalen zijn te downloaden waardoor ze offline bekeken kunnen worden.
 
 

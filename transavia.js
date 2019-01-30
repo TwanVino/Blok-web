@@ -53,6 +53,11 @@ if (document.querySelector('img[alt=downloadicoon]')) {
 
 }
 
+function changeStyle(){
+
+document.getElementById("afbeelding").src="images/Animation-list2.gif";
+}
+
 
 /* Cancel button + aanmeld button inlog formulier laten sluiten  */
 if (document.querySelector('div > input')) {
@@ -67,4 +72,5 @@ if (document.querySelector('div > input')) {
     closeButton.addEventListener('click', close);
 
 }
+
 
